@@ -1,9 +1,9 @@
 #include <WiFi.h>
 #include <WiFiUdp.h>
 
-const char* ssid = "OnePlus Nord 4";
-const char* password = "murali1234";
-const char* udpAddress = "10.202.131.109";
+const char* ssid = "<ssid>";
+const char* password = "<password>";
+const char* udpAddress = "<ip address>";
 const int udpPort = 5005;
 
 WiFiUDP udp;
