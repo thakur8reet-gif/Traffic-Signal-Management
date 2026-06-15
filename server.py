@@ -34,8 +34,8 @@ while True:
         else:
             congestion_counter[lane] = 0
 
-        if congestion_counter[lane] >= 3:
-            print(f"🚨 CONGESTION at {lane}")
+        if congestion_counter[lane] >= 4:
+            print(f" CONGESTION at {lane}")
 
         if len(traffic_data) == 4:
             total = sum(traffic_data.values())
@@ -43,7 +43,7 @@ while True:
             print(f"Total Vehicles: {total}")
             print(f"Most Congested Lane: {max_lane}")
             if total > 80:
-                print("🚨 INTERSECTION OVERLOAD")
+                print(" INTERSECTION OVERLOAD")
 
     current_time = time.time()
     if current_time - start_time >= 1:
